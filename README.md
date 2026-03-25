@@ -1,29 +1,53 @@
-<strong> **DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. ** </strong>
-
-# WESTERN GOVERNORS UNIVERSITY 
-## D387 – ADVANCED JAVA
-Welcome to Advanced Java! This is an opportunity for students to write multithreaded object-oriented code using Java frameworks and determine how to deploy software applications using cloud services.
-
-FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFER TO THE COURSE PAGE.
-## BASIC INSTRUCTIONS
-For this assessment, you will modify a Spring application with a Java back end and an Angular front end to include multithreaded language translation, a message at different time zones, and currency exchange. Then, build a Docker image of the current multithreaded Spring application and containerize it using the supporting documents provided in this task.
-
-
-## SUPPLEMENTAL RESOURCES 
-1.	How to clone a project to IntelliJ using Git?
-
-> Ensure that you have Git installed on your system and that IntelliJ is installed using [Toolbox](https://www.jetbrains.com/toolbox-app/). Make sure that you are using version 2022.3.2. Once this has been confirmed, click the clone button and use the 'IntelliJ IDEA (HTTPS)' button. This will open IntelliJ with a prompt to clone the proejct. Save it in a safe location for the directory and press clone. IntelliJ will prompt you for your credentials. Enter in your WGU Credentials and the project will be cloned onto your local machine.  
-
-2. How to create a branch and start Development?
-
-- GitLab method
-> Press the '+' button located near your branch name. In the dropdown list, press the 'New branch' button. This will allow you to create a name for your branch. Once the branch has been named, you can select 'Create Branch' to push the branch to your repository.
-
-- IntelliJ method
-> In IntelliJ, Go to the 'Git' button on the top toolbar. Select the new branch option and create a name for the branch. Make sure checkout branch is selected and press create. You can now add a commit message and push the new branch to the local repo.
-
-## SUPPORT
-If you need additional support, please navigate to the course page and reach out to your course instructor.
-## FUTURE USE
-Take this opportunity to create or add to a simple resume portfolio to highlight and showcase your work for future use in career search, experience, and education!
-
+Landon Hotel Application <br>
+Overview <br>
+The Landon Hotel Application is a full-stack web application built using Spring Boot (Java) and Angular that simulates a hotel booking and information system. The application integrates backend services, frontend UI, and database persistence to deliver features such as room reservations, internationalized content, and real-time availability filtering.
+This project demonstrates practical experience with layered architecture, REST API design, concurrency, and frontend-backend integration. <br>
+Key Features <br>
+Multithreaded Internationalization (i18n) <br>
+-Retrieves localized welcome messages concurrently using Java multithreading <br>
+-Uses resource bundles to support multiple locales (e.g., English and French) <br>
+-Exposes translations through a REST endpoint consumed by the frontend <br>
+Full-Stack Integration <br>
+-Angular frontend communicates with Spring Boot backend via REST APIs <br>
+-Dynamic data rendering (welcome messages, room availability, presentation times) <br>
+-Angular app bootstrapped and served through Spring static resources br>
+Room Reservation System <br>
+-Search for available rooms based on check-in and check-out dates <br>
+-Reservation requests sent to backend API <br>
+-Backend handles filtering and persistence logic <br>
+Timezone-Aware Scheduling <br>
+-Backend service generates presentation times across multiple time zones <br>
+-Frontend dynamically renders results for users <br>
+Layered Backend Architecture <br>
+-Controller layer (API endpoints) <br>
+-Service layer (business logic) <br>
+-Repository layer (data access with JPA) <br>
+-Conversion layer (DTO ↔ Entity mapping) <br>
+Database Integration <br>
+-H2 database configured for local development <br>
+-JPA/Hibernate used for ORM <br>
+-Data bootstrapped on application startup <br>
+Frontend Highlights <br>
+-Built with Angular (TypeScript, RxJS) <br>
+-Reactive forms for room search and booking <br>
+-HTTP client integration with retry and error handling <br>
+-Dynamic UI rendering of backend data: <br>
+--Welcome messages injected into navigation <br>
+--Room listings with currency conversion <br>
+--Presentation times from API <br>
+Tech Stack <br>
+Backend <br>
+-Java 17 <br>
+-Spring Boot <br>
+-Spring Data JPA <br>
+-Hibernate <br>
+Frontend <br>
+-Angular 14 <br>
+-TypeScript <br>
+-RxJS <br>
+Database <br>
+-H2 (development) <br>
+-MySQL driver included for extensibility <br>
+Build Tools <br>
+-Maven <br>
+-Angular CLI
